@@ -1,0 +1,102 @@
+<div class="">
+    <div class="alert alert-info">
+        Sebelum lanjut, silakan baca <a href="https://webhaidarrental.blogspot.com/p/syarat-ketentuan.html"
+            target="_blank">Syarat & Ketentuan</a> sewa.
+    </div>
+    <p class="lead" id="_produk_nama"></p>
+
+    <hr class="text-primary" />
+    <p>Silakan pilih masa sewa.</p>
+
+    <div class="list-group" id="_produk_tarif"></div>
+
+    <div class="text-muted mt-2 px-3 fst-italic">Lebih dari 1 hari, dihitung Mingguan.<br />
+        Lebih dari 1 Minggu, dihitung 2 Minggu, dst.</div>
+
+</div>
+
+<form class="row g-3 d-none">
+    <div class="col-6">
+        <label for="lama_sewa" class="form-label">Lama sewa (hari)</label>
+        <input type="number" class="form-control" id="lama_sewa" required />
+    </div>
+    <div class="col-6">
+        <label for="tanggal_sewa_mulai" class="form-label">Tanggal Mulai Sewa</label>
+        <input type="date" class="form-control" id="tanggal_sewa_mulai" required />
+    </div>
+
+    <div class="col-md-6">
+        <label for="tanggal_sewa_mulai" class="form-label">Tanggal Sewa</label>
+        <input type="date" class="form-control" id="tanggal_sewa_mulai" required />
+    </div>
+    <div class="col-md-6">
+        <label for="tanggal_sewa_selesai" class="form-label">Tanggal Selesai Sewa</label>
+        <input type="date" class="form-control" id="tanggal_sewa_selesai" required />
+    </div>
+    <div class="col-12">
+        <label for="materai_deposit" class="form-label">Syarat no 5?</label>
+        <select class="form-select" id="materai_deposit" required>
+            <option selected disabled value="" />Pilih syarat
+            <option value="deposit" />Deposit Rp 100.000
+            <option value="materai" />Materai Rp 10.000
+        </select>
+        <div id="syaratHelp" class="form-text">Silakan baca <a
+                href="https://webhaidarrental.blogspot.com/p/syarat-ketentuan.html" target="_blank">Syarat &
+                Ketentuan</a></div>
+    </div>
+    <hr class="text-primary" />
+    <div class="col-12">
+        <label for="nama_bunda" class="form-label">Nama Bunda</label>
+        <input type="text" class="form-control" id="nama_bunda" value="" required="" placeholder="nama lengkap bunda" />
+    </div>
+    <div class="col-md-6">
+        <label for="hp_aktif" class="form-label">No Hp Aktif</label>
+        <input type="text" class="form-control" id="hp_aktif" value="" required placeholder="08xxxxxxxxx" />
+    </div>
+    <div class="col-md-6">
+        <label for="wa_aktif_suami" class="form-label">No WA Aktif</label>
+        <input type="text" class="form-control" id="wa_aktif_suami" value="" required placeholder="08xxxxxxxxx" />
+    </div>
+    <div class="col-md-6">
+        <label for="instagram" class="form-label">Akun Instagram</label>
+        <input type="text" class="form-control" id="instagram" value="" required placeholder="@haidar_rentaljogja" />
+    </div>
+    <div class="col-md-6">
+        <label for="facebook" class="form-label">Akun Facebook</label>
+        <input type="text" class="form-control" id="facebook" value="" required placeholder="@HaidarRentalJogja" />
+    </div>
+
+    <div class="col-12">
+        <label for="alamat_rumah" class="form-label">Alamat Rumah (sesuai KTP)</label>
+        <textarea class="form-control" id="alamat_rumah" required placeholder="alamat lengkap sesuai KTP"></textarea>
+    </div>
+    <div class="col-12">
+        <label for="alamat_domisili" class="form-label">Alamat Rumah sekarang (bisa shareloc)</label>
+        <textarea class="form-control" id="alamat_domisili" required
+            placeholder="alamat lengkap tinggal sekarng"></textarea>
+    </div>
+
+    <hr class="text-primary" />
+
+    <div class="col-md-6">
+        <label for="usia_anak" class="form-label">Usia Anak (bulan)</label>
+        <input type="number" class="form-control" id="usia_anak" value="0" required placeholder="2" />
+    </div>
+    <div class="col-md-6">
+        <label for="berat_anak" class="form-label">Berat Badan Anak (kg)</label>
+        <input type="number" class="form-control" id="berat_anak" value="6" required placeholder="8" />
+    </div>
+
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ya" id="syarat_setuju" required />
+            <label class="form-check-label" for="syarat_setuju">
+                Saya setuju dan sudah membaca <a href="https://webhaidarrental.blogspot.com/p/syarat-ketentuan.html"
+                    target="_blank">Syarat & Ketentuan</a> sewa.
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+</form>
