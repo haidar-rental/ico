@@ -2,7 +2,7 @@
 const JavaScriptObfuscator = require('webpack-obfuscator');
 
 module.exports = {
-    entry: './src/fontawesome.js',
+    entry: ['./src/fontawesome.js'],
     output: {
         filename: 'fa.js',
         // path: path.resolve(__dirname, 'dist'),
@@ -10,7 +10,7 @@ module.exports = {
     plugins: [
         new JavaScriptObfuscator({
             rotateStringArray: true,
-            domainLock: ['webhaidarrental.blogspot.com', 'haidarrentaljogja.com'],
+            domainLock: ['haidarrentaljogja.com', 'www.haidarrentaljogja.com'],
             domainLockRedirectUrl: 'https://www.haidarrentaljogja.com'
         })
     ]
