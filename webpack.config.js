@@ -2,9 +2,9 @@
 const JavaScriptObfuscator = require('webpack-obfuscator');
 
 module.exports = {
-    entry: ['./src/fontawesome.js'],
+    entry: ['./src/main.js', './src/fontawesome.js'],
     output: {
-        filename: 'fa.js',
+        filename: 'main.js',
         // path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
@@ -14,4 +14,5 @@ module.exports = {
             domainLockRedirectUrl: 'https://www.haidarrentaljogja.com'
         })
     ]
+    
 };
