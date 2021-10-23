@@ -2,7 +2,7 @@
 const JavaScriptObfuscator = require('webpack-obfuscator');
 
 module.exports = {
-    entry: ['./src/main.js', './src/fontawesome.js'],
+    entry: ['./src/fontawesome.js', './src/main.js'],
     output: {
         filename: 'main.js',
         // path: path.resolve(__dirname, 'dist'),
