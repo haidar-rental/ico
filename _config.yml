@@ -61,3 +61,7 @@ collections:
     products:
         output: true
         permalink: /:collection/:title:output_ext
+
+feed:
+    collections:
+        - changes
