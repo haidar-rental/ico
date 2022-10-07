@@ -64,4 +64,5 @@ collections:
 
 feed:
     collections:
-        - changes
+        - blogs
+        - products
