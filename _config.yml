@@ -26,8 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
     Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:
+author: "Toto Prayogo" # the author of your site
 
 # Build settings
 theme: minima
@@ -55,6 +54,9 @@ plugins:
 #   - vendor/ruby/
 
 collections:
+    pages:
+        output: true
+        permalink: /p/:path:output_ext
     blogs:
         output: true
         permalink: /:collection/:title:output_ext
@@ -63,6 +65,9 @@ collections:
         permalink: /:collection/:title:output_ext
 
 feed:
+    excerpt_only: true
     collections:
-        - blogs
-        - products
+        blogs:
+            path: '/feed/blog.xml'
+        products:
+            path: '/feed/product.xml'
