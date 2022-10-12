@@ -16,4 +16,3 @@
     ></path>
   </svg>
 </template>
-
