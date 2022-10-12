@@ -1,10 +1,13 @@
 <script setup>
 import PilihItem from "./PilihItem.vue";
-import DocumentationIcon from "./icons/IconDocumentation.vue";
-import ToolingIcon from "./icons/IconTooling.vue";
-import EcosystemIcon from "./icons/IconEcosystem.vue";
-import CommunityIcon from "./icons/IconCommunity.vue";
-import SupportIcon from "./icons/IconSupport.vue";
+import JagaKebersihan from "./icons/IconJagaKebersihan.vue";
+import Steril from "./icons/IconSteril.vue";
+import HargaTerjangkau from "./icons/IconHargaTerjangkau.vue";
+import DataAman from "./icons/IconDataAman.vue";
+import PilihanBervariasi from "./icons/IconPilihanBervariasi.vue";
+import Berpengalaman from "./icons/IconBerpengalaman.vue";
+import Garansi from "./icons/IconGaransi.vue";
+import SyaratSewa from "./icons/IconSyaratSewa.vue";
 </script>
 
 <template>
@@ -16,7 +19,7 @@ import SupportIcon from "./icons/IconSupport.vue";
     >
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <JagaKebersihan />
         </template>
         <template #heading>Menjaga Kebersihan</template>
         <template #description>
@@ -26,7 +29,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <Steril />
         </template>
         <template #heading>Steril</template>
         <template #description>
@@ -37,7 +40,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <HargaTerjangkau />
         </template>
         <template #heading>Harga Terjangkau</template>
         <template #description>
@@ -47,7 +50,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <DataAman />
         </template>
         <template #heading>Data Aman</template>
         <template #description>
@@ -57,7 +60,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <PilihanBervariasi />
         </template>
         <template #heading>Pilihan Bervariasi</template>
         <template #description>
@@ -67,7 +70,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <Berpengalaman />
         </template>
         <template #heading>Berpengalaman</template>
         <template #description>
@@ -78,7 +81,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <Garansi />
         </template>
         <template #heading>Garansi uang kembali</template>
         <template #description>
@@ -89,7 +92,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
       <PilihItem>
         <template #icon>
-          <DocumentationIcon />
+          <SyaratSewa />
         </template>
         <template #heading>Syarat sewa mudah</template>
         <template #description>
@@ -100,3 +103,12 @@ import SupportIcon from "./icons/IconSupport.vue";
     </div>
   </div>
 </template>
+
+<style scoped>
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+</style>
