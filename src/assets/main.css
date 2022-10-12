@@ -1,35 +1,96 @@
-@import "./base.css";
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.notice {
+  position: absolute;
+  bottom: 0;
+  padding: 10;
+  text-align: center;
+  background: yellow;
+  width: 100%
 }
 
-a,
-.green {
+svg.logo-haidar {
+  fill: var(--bs-light);
+  height: 40px
+}
+
+.item-view #produk_haidar .hide-single {
+  display: none
+}
+
+.item-view .carousel-indicators {
+  position: static;
+}
+
+.item-view .carousel-indicators li {
+  width: 300px;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.product:hover img {
+  opacity: 0.6;
+}
+
+.product .cta {
+  bottom: 1rem;
+  right: 1rem;
+  -webkit-transform: translateX(0.5rem);
+  transform: translateX(0.5rem);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.product:hover .cta {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.product .badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+}
+
+.product-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.85rem;
+  background: #fff;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  transition: all 0.3s;
+  z-index: 99;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.list-group-checkable {
+  display: grid;
+  gap: .5rem;
+  border: 0;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.list-group-checkable .list-group-item {
+  cursor: pointer;
+  border-radius: .5rem;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.list-group-item-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.list-group-item-check:hover+.list-group-item {
+  background-color: var(--bs-light);
+}
+
+.list-group-item-check:checked+.list-group-item {
+  color: #fff;
+  background-color: var(--bs-blue);
+}
+
+.list-group-item-check[disabled]+.list-group-item,
+.list-group-item-check:disabled+.list-group-item {
+  pointer-events: none;
+  filter: none;
+  opacity: .5;
 }
